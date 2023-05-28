@@ -7,7 +7,10 @@ header{
     .menu{
         padding-top: 1%;
           @media (max-width:767px){
-           nav{
+          nav{
+            display: none;
+          }
+          .live{
             display: none;
           }
       }
@@ -20,18 +23,23 @@ header{
         border-radius:0 0 1vh 1vh;
        .logo{
          padding:10% 10% 20% 10% ;
-         width: 6vw;
-         height: 8vh;
+         width: 5vw;
+         height: 6vw;
        }
     }
     .number{
          margin-top: 1.5%;
+         margin-bottom: 1.5%;
     }
     .live{
+        display: flex; 
+        justify-content: center;
+        align-items: center;
         padding:10% 60%;
         border-radius: 4px;
         color:#FF4444;
         background-color:grey;
+        width: 8vw;
         p{
             font-size: 1vw;
         }

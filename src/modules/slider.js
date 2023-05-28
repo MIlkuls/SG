@@ -1,29 +1,38 @@
-let sliderImages = document.querySelector('.slider-images');
-let prevButton = document.getElementById('prevButton');
-let nextButton = document.getElementById('nextButton');
+const wrapper = document.querySelector('.wrapper_gallery')
+let pageWidth = document.documentElement.clientWidth;
 
-let imageIndex = 0;
-let images = Array.from(sliderImages.children);
+let src = 'photo1.jfif'
+let counter = 0
 
-
-
-function showImage(index) {
-  if (index < 0) {
-    index = images.length - 1;
-  } else if (index >= images.length) {
-    index = 0;
-  }
-  
-  sliderImages.style.transform = `translateX(-${index * 100}%)`;
-  imageIndex = index;
+if(counter === 0){
+   src = 'photo1.jfif'
+}
+if(counter === 1){
+   src = 'photo2.jfif'
+}
+if(counter === 2){
+   src = 'photo3.jfif'
 }
 
-prevButton.addEventListener('click', function() {
-  showImage(imageIndex - 1);
-});
+function next(){
+    if(counter !== 2){
+        counter++
+    }else counter = 0
+}
+function prev(){
+    if(counter !== 0){
+        counter+= -1
+    }else counter = 2
+}
 
-nextButton.addEventListener('click', function() {
-  showImage(imageIndex + 1);
-});
 
-showImage(imageIndex);
+ wrapper.innerHTML = `
+     <div>
+   <img src = ${src} alt = 'photo'>
+   <div>
+      <button onclick='${next()}'>Вперёд</button>
+      <button onclick='${prev()}'>Назад</button>
+   </div>
+ </div>
+ `
+
