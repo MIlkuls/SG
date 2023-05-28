@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+p{
+    margin-bottom: 0;
+}
+ul{
+  padding-left: 0;
+}
+
+
+.display{
+  display: none;
+}
+.rotate{
+   transform: rotate(180deg);
+}
+
+  button{
+    background-color:#4744C9;
+    padding: 2%;
+    border-radius:0.5vw;
+    border:none;
+    font-size: 2vw;
+    width: 20vw;
+    color:white;
+    transition: 0.5s ease-in-out;
+    white-space: nowrap;
+  }
+  button:hover{
+    background-color:rgb(29, 27, 144,0.8) 
+}

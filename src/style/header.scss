@@ -1,0 +1,45 @@
+header{
+    padding: 0 5% 0 5%;
+    background-color:$back_header;
+    color: white;
+    font-size: 1vw;
+    width: 100%;
+    .menu{
+        padding-top: 1%;
+          @media (max-width:767px){
+           nav{
+            display: none;
+          }
+      }
+        ul{
+            margin-top: 1%;
+        }
+    }
+    .logo_div{
+        background-color:#3963FF;
+        border-radius:0 0 1vh 1vh;
+       .logo{
+         padding:10% 10% 20% 10% ;
+         width: 6vw;
+         height: 8vh;
+       }
+    }
+    .number{
+         margin-top: 1.5%;
+    }
+    .live{
+        padding:10% 60%;
+        border-radius: 4px;
+        color:#FF4444;
+        background-color:grey;
+        p{
+            font-size: 1vw;
+        }
+        img{
+            width: 2vw;
+            height: 2vh;
+        }
+    }
+   
+}
+

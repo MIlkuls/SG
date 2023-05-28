@@ -1,0 +1,19 @@
+body{
+    background-image: url("image/back.svg");
+    background-color: black;
+  
+}
+
+
+body:hover .live_img{
+     animation: spin 2s infinite linear;
+}
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(15deg);
+      }
+    }

@@ -1,0 +1,38 @@
+.live_section{
+    color:white;
+    .small_img{
+        width: 5vw;
+    }
+    .men_png{
+        width: 50vw;
+    }
+    .live_info{
+        margin: 15% 0% 0% 10%;
+        h2{
+          font-size: 4vw;
+        }
+        p{
+            font-size:1.5vw;
+            color:$text;
+
+        }
+      
+    }
+    .accessories_png{
+        top:40%;
+        left:10vw;
+    }
+    .ps_png{
+        top:100%;
+        left:25vw;
+        width: 6vw;
+    }
+    .tickets_png{
+          top:100%;
+          left:45vw;
+    }
+    .figma_png{
+        top:20%;
+        left:33vw;
+    }
+}

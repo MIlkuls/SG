@@ -1,0 +1,53 @@
+.format_section{
+    color:white;
+    padding: 10%;
+    h2{
+       text-align: center;
+       padding-bottom: 3%;
+       font-size: 4vw;
+    }
+
+    form{
+        background-color: $back_form;
+        padding: 3%;
+        border-radius:1vw;
+        h3{
+            font-size: 2vw;
+        }
+        h4{
+            font-size: 1.5vw;
+            color:$text;
+        }
+        p{
+            font-size: 1vw;
+        }
+        .price {
+            
+           .cell{
+            background-color:$cell;
+            padding: 2% 5% 0% 3%;
+            border-radius:1vw;
+            span{
+                font-size: 3vw;
+            }
+            p{
+                padding-bottom: 2%;
+            }
+            h4{
+                color:white;
+            }
+           }
+        }
+        button{
+            width: 15vw;
+            font-size: 1.5vw;
+      }
+      .grey{
+        background-color:$cell;
+      }
+      .grey:hover{
+        background-color:rgb(30, 30, 30)
+      }
+}
+
+}

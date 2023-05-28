@@ -1,0 +1,33 @@
+.video_section{
+    padding-top: 10%;
+    p{
+        padding: 0% 11% 0% 11%;
+        color: $text;
+        font-size: 1.5vw;
+    }
+    h2{
+        color:white;
+        font-size: 3vw;
+    }
+    .video{
+        width:80%;
+        height: 40vw;
+        background-color:#DADDE3;
+        margin:5% 10% 1% 10%;
+        border-radius:1vw;
+        .player_svg{
+               width:8vw;
+               cursor: pointer;
+        }
+    }
+    h3{
+        margin-left:10%;
+        font-size: 2vw;
+        color:$text;
+    }
+    .arrow2{
+        height: 7vw;
+        bottom: 2vh;
+        left: 5vw;
+    }
+}
