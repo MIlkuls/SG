@@ -24,7 +24,7 @@ function prev(){
         counter+= -1
     }else counter = 2
 }
-
+if(pageWidth < 750){
 
  wrapper.innerHTML = `
      <div>
@@ -35,4 +35,4 @@ function prev(){
    </div>
  </div>
  `
-
+}
