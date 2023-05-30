@@ -7,7 +7,7 @@
     <title>SG</title>
 </head>
 <body>
-    <header class="d-flex justify-content-between">
+    <header class="d-flex justify-content-between position-relative">
         <section>
             <div class="logo_div position-absolute">
                 <img src="image/logo.svg" class="logo" alt="logo"/>
@@ -15,41 +15,46 @@
         </section>
         <section class="d-flex menu gap-5">
             <nav>
-                <ul class="d-flex gap-4 ">
+                <ul class="d-flex gap-3 ">
                     <li>
                         Очное обучение
+                       <img src="image/arrow.svg" class="arrow_header"   alt="arrow" >
                     </li>
                     <li>
                         Online-обучение
                     </li>
-                    <li class="d-flex">
-                        <p>Наши проекты</p>
+                    <li>
+                        Наши проекты
+                        <img src="image/arrow.svg" class="arrow_header" alt="arrow" >
                     </li>
                     <li>
                         Мероприятия
                     </li>
-                    <li class="d-flex">
+                    <li>
                         Об Академии
+                        <img src="image/arrow.svg" class="arrow_header"  alt="arrow" >
                     </li>
                     <li>
                         Контакты
                     </li>
                 </ul>
             </nav>
-            <div>
+
                 <div class="live gap-2">
                     <p>Live</p>
                     <img src="image/live.svg" class="live_svg" alt="live">
                 </div>
-            </div>
         </section>
         <section class="number">
             <div>
-                <p>+38 (044) 537 22 80</p>
+                +38 (044) 537 22 80
+                <img src="image/arrow.svg" class="arrow_header" alt="arrow" id="arrow1">
             </div>
         </section>
+        <div class="blur position-absolute "></div>
     </header>
-       <section class="d-flex live_section ">
+    <main>
+       <section class="d-flex live_section">
         <div class="d-flex flex-column live_info gap-3">
             <h2>
                Компьютерная<br>
@@ -64,6 +69,7 @@
             <img src="image/tickets.png" class=" small_img tickets_png position-absolute live_img" alt="men">
             <img src="image/accessories.png" class=" small_img accessories_png position-absolute live_img" alt="men">
             <img src="image/ps.svg" class=" small_img ps_png position-absolute live_img" alt="men">
+            <div class="blur2 position-absolute"></div>
         </div>
         </section>
         <section class="video_section d-flex flex-column">

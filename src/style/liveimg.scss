@@ -4,6 +4,7 @@
         width: 5vw;
     }
     .men_png{
+        z-index:99;
         width: 50vw;
     }
     .live_info{
@@ -19,20 +20,31 @@
       
     }
     .accessories_png{
+        z-index:99;
         top:40%;
         left:10vw;
     }
     .ps_png{
+        z-index:99;
         top:100%;
         left:25vw;
         width: 6vw;
     }
     .tickets_png{
+          z-index:99;
           top:100%;
           left:45vw;
     }
     .figma_png{
+        z-index:99;
         top:20%;
         left:33vw;
     }
+      .blur2{
+    z-index:1;
+    width: 40vw;
+    height: 40vw;
+    background-color: #3963FF;
+    filter:blur(18vh) ;
+   }
 }
