@@ -22,4 +22,39 @@
     img{
         border-radius:1vw;
     }
+    .buttons{
+        display: none;
+    }
+    
+    @media(max-width:767px){
+        .wrapper_gallery{
+            overflow: hidden;
+            position: relative;
+            height:50vw;
+
+        }
+        .large img, .small img{
+            width: 60%;
+        }
+        .arrow1 {
+              transform: rotate(90deg);
+        }
+        .arrow2{
+             transform: rotate(270deg);
+        }
+        .slide {
+           display: none;
+           position:absolute;
+           left:20%;
+           top:10%;
+        }
+
+        .slide.active {
+           display: block;
+        }
+        .buttons{
+            display: flex;
+        }
+    }
+
 }

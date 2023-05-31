@@ -1,56 +1,40 @@
-<<<<<<< HEAD
+let slides = document.querySelectorAll(".slide");
+let currentSlide = 1;
 
 
-
-
-   
-  
-
-
-
-
-
-
-
-
-
-=======
-const wrapper = document.querySelector('.wrapper_gallery')
-let pageWidth = document.documentElement.clientWidth;
-
-let src = 'photo1.jfif'
-let counter = 0
-
-if(counter === 0){
-   src = 'photo1.jfif'
-}
-if(counter === 1){
-   src = 'photo2.jfif'
-}
-if(counter === 2){
-   src = 'photo3.jfif'
+function showSlide(slideIndex) {
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].classList.remove("active");
+  }
+  slides[slideIndex].classList.add("active");
 }
 
-function next(){
-    if(counter !== 2){
-        counter++
-    }else counter = 0
+function prevSlide() {
+  if (currentSlide === 0) {
+    currentSlide = slides.length - 1;
+  } else {
+    currentSlide--;
+  }
+  showSlide(currentSlide);
+  console.log(currentSlide)
 }
-function prev(){
-    if(counter !== 0){
-        counter+= -1
-    }else counter = 2
-}
-if(pageWidth < 750){
 
- wrapper.innerHTML = `
-     <div>
-   <img src = ${src} alt = 'photo'>
-   <div>
-      <button onclick='${next()}'>Вперёд</button>
-      <button onclick='${prev()}'>Назад</button>
-   </div>
- </div>
- `
+function nextSlide() {
+  if (currentSlide === slides.length - 1) {
+    currentSlide = 1;
+  } else {
+    currentSlide++;
+  }
+  showSlide(currentSlide);
+  console.log(currentSlide)
 }
->>>>>>> 2ac24cd338abe19dfe9f6583f14516c787861530
+
+let prevButton = document.getElementById("prevBtn");
+let nextButton = document.getElementById("nextBtn");
+
+window.addEventListener("load",showSlide(currentSlide))
+prevButton.addEventListener("click", prevSlide);
+nextButton.addEventListener("click", nextSlide);
+
+
+showSlide(currentSlide);
