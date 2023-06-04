@@ -108,27 +108,6 @@ showSlide(currentSlide);
 
 /***/ }),
 
-/***/ "./src/modules/tempCodeRunnerFile.js":
-/*!*******************************************!*\
-  !*** ./src/modules/tempCodeRunnerFile.js ***!
-  \*******************************************/
-/***/ (() => {
-
-let wrapper = document.querySelector('.wrapper_gallery');
-let src = new Image();
-src.src = 'image/ps.svg';
-wrapper.innerHTML += `
-     <div>
-   <div>
-      <img src = ${src}>
-      <button class='button1'>Вперёд</button>
-      <button class='button2''>Назад</button>
-   </div>
- </div>
- `;
-
-/***/ }),
-
 /***/ "./node_modules/core-js/es6/index.js":
 /*!*******************************************!*\
   !*** ./node_modules/core-js/es6/index.js ***!
@@ -11187,11 +11166,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_list_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_list_js__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _modules_slider_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/slider.js */ "./src/modules/slider.js");
 /* harmony import */ var _modules_slider_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_slider_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _modules_tempCodeRunnerFile_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/tempCodeRunnerFile.js */ "./src/modules/tempCodeRunnerFile.js");
-/* harmony import */ var _modules_tempCodeRunnerFile_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_tempCodeRunnerFile_js__WEBPACK_IMPORTED_MODULE_5__);
 
  /*слежка  за елементом чтобы он авто изменялся */
-
 
 
 
@@ -11199,4 +11175,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-//# sourceMappingURL=index.1742b5d0b5a656cabe3e.js.map
+//# sourceMappingURL=index.0dd2f460f1358db3f75f.js.map
